@@ -4,7 +4,8 @@ import './HomePage.css'
 export function HomePage(){
     return(
      <>
-         <div className="header">
+        <title>Ecommerce Project</title>
+        <div className="header">
         <div className="left-section">
             <a href="index.html" className="header-link">
             <img className="logo"
