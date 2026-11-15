@@ -6,12 +6,12 @@ import './App.css'
 import { HomePage } from './pages/HomePage'
 import { CheckoutPage } from './pages/CheckoutPage';
 import { OrdersPage } from './pages/OrdersPage';
-import { useEffect } from 'react';
+
 
 function App() {
    const [cart , setCart ] =useState([]);
    useEffect(()=>{
-       axios.get('http://localhost:3000/api/cart-items').then((response)=>{
+       axios.get('/api/cart-items?expand=product').then((response)=>{
             setCart(response.data)
           })
    },[]);
