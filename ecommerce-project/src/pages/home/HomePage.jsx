@@ -10,7 +10,7 @@ import { ProductsGrid } from './ProductsGrid';
    
     useEffect( ()=>{
         const getHomeData = async ()=>{
-            const response= await axios.get('http://localhost:3000/api/products');
+            const response= await axios.get('/api/products');
             setProducts( response.data);
         };
         getHomeData();
